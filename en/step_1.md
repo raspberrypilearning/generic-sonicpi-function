@@ -1,25 +1,30 @@
-## Introduction
+You can add a group of instructions to a function. This will give that particular piece of music a name.
 
-Add project description here. What will learners be making?
++ Create a function by defining it and giving it a name. The name of this function is `:two_notes`.
 
-### What you will make
+```ruby
+define :two_notes do
+    # Place your music here
+end
+```
 
-Add something here to showcase here, for example:
++ Add your code between `do` and `end`
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+```ruby
+define :two_notes do
+    play 60
+    sleep 1
+    play 65
+    sleep 1
+end
+```
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+If you run your code like this, nothing will happen. This is because you need to **call** the function for the code to be executed.
 
-### What you will learn
++ Call the function by typing its name anywhere after the `end` of the function (leave out the `:`)
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+```ruby
+two_notes
+```
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
-
-### Additional information for educators
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
-
-Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
++ You can call the function as many times as you like, but you only need to define its contents once. This saves time, makes your code shorter and means that if you need to update the code, you only need to update it in one place.
